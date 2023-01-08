@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA_Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, intial-scal=1.0">
+        <title>Portfolio!</title>
+        <link rel="stylesheet" href="style.css">
+        <i class="bi bi-linkedin"></i>
+    </head>
+    <body>
+        <!--------------NAV--------->
+        <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/10.gif" class="logo">
+                <ul id="sidemenu">
+                    <li><a href=" #header">HOME</a></li>
+                    <li><a href=" #proprojects">ABOUT</a></li>
+                    <li><a href=" #ProfessionalProjects">INDEPENDENT PROJECTS</a></li>
+                    <li><a href=" #sideprojects">FUN SIDE PROJECTS</a></li>
+                    <li><a href=" #resume">RESUME</a></li>
+                    <li><a href=" #contact">CONTACT</a></li>
+                    <li><a href=" #talk">TALK</a></li>
+                    <p><a href=""><img src="images/close.png" onclick="closemenu()"></a></p>
+                </ul>
+                <p><a href=""><img src="images/menu.png" onclick="openmenu()"></a></p>
+            </nav>
+            <div class="header-text">
+
+                <h1> Hi there!, <h1></h1> <br> I'm <span>Ganesh</span> <br>Game Programmer</h1>
+                <h1></h1>
+                <p>From Hyderabad / India</p>
+            </div>
+        </div>
+      </div>
+      <!--------------About Prof Work Edu--------->
+      <div id="proprojects">
+          <div class="container">
+            <div class="row">
+                <div class="propooject-column-1">
+                    <img src="images/eyes.gif">
+                </div>
+                <div class="propooject-column-2">
+                    <h1 class="sub-title">About</h1>
+                    <p>You’ve stumbled upon the portfolio of Ganesh (game programmer, hard worker) Here you can view my resume, a few of my independent projects, and some fun coding or game stuff. </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            
+                            <p class="tab-links" onclick="opentab('education')">Education</p>  
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Technical Skill's</span><br>Unity3D, C#, C++ ,C ,Java</li>
+                                <li><span>3D computer graphics</span><br>Blender</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Bachelor of Technology - 2017 - 2021</span><br>Computer Science & Game Development - <span>80%</span></li>
+                                <li><span>2015</span><br>College (Intermediate) - <span>65%</span></li>
+                                <li><span>2013</span><br>High School (SSC) - <span>75%</span></li>
+                            </ul>
+                        </div>
+                        <p id="resume">
+                            <a href="images/Resume.pdf" download><img src="images/down.ico"><span>RESUME</span></a>
+                        </p>
+                    </div>  
+            </div>
+        </div>
+      </div>
+      <!--------------PROFESSIONAL Independent Projects Program Work--------->
+      <div id="ProfessionalProjects">
+        <div id="container0">
+            <h1 class="sub-title0">Independent Projects</h1>
+            <div id="projectlist0">
+                <div>
+                    <video src="images/Kurai.mp4" width="640" height="480" controls allowfullscreen ></video>
+                    <h2>Kurai Tekino</h2>
+                    <p>• A Top-Down Shooter Game creates a random procedural room generator player can explore the rooms to defeat the enemies.</p>
+                    <p>• Dash ability is used to avoid approaching obstacles or enemies.</p>
+                    <p>• Time Bomb has been implemented to destroy the blocked rooms to explore the rooms.</p>
+                    <p>• The further time passes, the more enemies spawn in random (positions or rooms).</p>
+                    <p>• Various kinds of enemies were implemented,  When it dies spawn a loot or enemies at their position.</p>
+                    <p>• Three enemies Red, Green, Gray when it dies spawn a loot (ammo or health) for those health has equally.</p>
+                    <p>• When it comes to the Purple Enemy Health has “10” after it dies it spawns a ghost Black enemy can be visible in dark.</p>
+                    <p>• Next when the black enemy dies it spawns a pink0 tiny enemy</p>
+                    <p>• Next Pink0 tiny enemy dies it spawns a (back enemy or pink1 tiny enemy).</p>
+                    <p>• If pink1 tiny enemy dies, it spawns a loot (ammo).</p>
+                    <p>• Basic AI Follow and shoot were implemented when it comes closer to the player it shoots if away from the player enemy move towards it.</p>
+                    <p>• Every hit Enemy health will be visible in Number form.</p>
+                    <p>• Ammo and Player Health, Enemy Health UI were initiated and can be seen on screen while playing.</p>
+                </div>
+                <div>
+                    <video src="images/Mugger.mp4" width="640" height="480" controls allowfullscreen ></video>
+                    <h2>Mugger</h2>
+                    <p>• Drawn artwork for the background including parallax side scrolling effect.</p>
+                    <p>• Processed a Unity Sprite Skin Component to custom artwork for assigning a few animations to the Player and Enemy.</p>
+                    <p>• Implemented a few action animations either punch, kick nor weapon (stick), To face the incoming actions towards the player or enemy.</p>
+                    <p>• Drawn a line from player forwards to a particular range to detect an object with Unity RayCast system</p>
+                    <p>• Weapon (stick) Pick and drop items were carried out to the player in a certain range.</p>
+                    <p>• Health systems were implemented for both with UI icons.</p>
+                    <p>• Implemented basic AI following (enemy move towards and in certain range AI attacks the player).</p>
+                    <p>• Initiated a bit more to sync Raindrops, Background Sound and street lights were shutters.</p>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!--------------FUN SIDE Projects Design Work--------->
+      <div id="sideprojects">
+        <div id="container">
+            <h1 class="sub-title">Fun Side Projects</h1>
+            <div id="projectlist">
+                <div>
+                    <video src="images/9Nine.mp4" width="640" height="480" controls allowfullscreen ></video>
+                    <h2>9 (Nine)</h2>
+                    <p>• Used a Poly Build Tool combined with Shrinkwrap tool to Retopology for better Performance also reduced edges and faces.</p>
+                    <p>• Implemented Boolean Tool To intersect & union Objects to optimize without losing materials and textures.</p>
+                    <p>• Added a Subdivision Surface Tool to split the faces into smaller parts for smoother appearance.</p>
+                    <p>• Added Screw Tool to metal objects for screw effect.</p>
+                    <p>• With Smart UV Project Tool joined the textures in a prominent way.</p>
+                </div>
+                <div>
+                    <video src="images/Tod.mp4" width="640" height="480" controls allowfullscreen ></video>
+                    <h2>Tod</h2>
+                    <p>• Added a SkinModifier Tool with single vertices and edges defines the vertex radius thickness.</p>
+                    <p>• Extruded, the single vertex forms a custom mesh shape.</p>
+                    <p>• First created Armature for half a side and later symmetrized.</p>
+                    <p>• With Subdivision Surface  Tool Increased a viewport to smoothen the mesh.</p>
+                    <p>• Used a Smart UV Project.</p>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!---------------------------------Contact--------------------------------------------->
+      <div id="contact">
+          <div class="Container">
+              <div class="row">
+                  <div class="contact-left">
+                      <h1 class="sub-title">Contact</h1>
+                      <div class="social-icons">
+                        <p>I hope you got interested in my works!</p>
+                          <a href=""><img src="images/git.ico"></a>  
+                        </div>
+                        <p><a href=""><img src="images/send.ico">sectita123@gmail.com</a></p>
+                        <p><a href=""><img src="images/phone.ico"></a>+9194940696434</p>
+                        <div class="end-portfolio">
+                            <p>Thankyou for visiting my portfolio.</p>
+                            <p>I hope you have a great day!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <!--------------js----------for----------prowork----for------onclick-----event------>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<!--------------screen resolution menu----------->
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-500px";
+    }
+    
+</script>
+  </body>
+</html>

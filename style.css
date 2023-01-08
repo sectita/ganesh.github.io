@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #000000;
+    color: #999999;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/);
+    background-size: cover;
+    background-position: center;
+
+}
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 140px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+#header .container nav ul li a{
+    color: #c2bfb0;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #5aa9a2;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 20%;
+    font-size: 50px;
+}
+.header-text h1{
+    font-size: 50px;
+    margin-top: 20px;
+}
+.header-text span{
+    color: #14857b;
+}
+/*--------------Prof Work---------*/
+#about{
+    padding: 10px 0;
+    color: #999999;
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/*--------------column-1&2---------*/
+.propooject-column-1{
+    flex-basis: 35%;
+}
+.propooject-column-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.propooject-column-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #727e7d;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #14857b;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #51fae6;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+/*----------Professional Projects-------------*/
+#ProfessionalProjects{
+    padding: 30px 0;
+}
+#projectlist0{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+#projectlist0 div p{
+    color: #638d89;
+    text-decoration: none;
+    font-size: 16px;
+}
+#projectlist0 div{
+    background: #1b1b1b;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+}
+#projectlist0 div img{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+#projectlist0 div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.sub-title0{
+    margin-top: 5%;
+    color: #14857b;
+    font-size: 55px;
+}
+
+/*----------Fun sideprojects-------------*/
+#sideprojects{
+    padding: 30px 0;
+}
+#projectlist{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+#projectlist div p{
+    color: #638d89;
+    text-decoration: none;
+    font-size: 16px;
+}
+#projectlist div{
+    background: #1b1b1b;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+}
+#projectlist div img{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+#projectlist div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.sub-title{
+    color: #14857b;
+}
+
+/*------------------------Contact-------------------------*/
+.contact-left{
+    flex-basis: 35%;
+    font-size: 20px;
+    margin-left: 45px;
+}
+.contact-left div p{
+    flex-basis: 20%;
+    font-size: 18px;
+    margin-top: 35px;
+}
+.contact-left a img{
+    font-size: 10px;
+    width: 5%;
+    margin-left: 30px;
+    margin-top: 40px;
+    height: -10%;
+}
+.contact-left a{
+    margin-top: 30px;
+}
+.contact-left p a{
+    color: #14857b;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 20px;
+}
+.contact-left p{
+    color: #638d89;
+    text-decoration: none;
+    font-size: 16px;
+}
+.social-icons a img{
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 20px;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a img:hover{
+    color: #14857b;
+    transition: translateY(-5px);
+}
+.propooject-column-2 p a img{
+    margin-top: 25px;
+    width: 40px;
+}
+.propooject-column-2 p a{
+    font-size: 30px;
+    text-decoration: none;
+}
+.propooject-column-2 p a:hover{
+    background-color: #b3f1e921;
+    font-size: 40px;
+    border-radius: 10px;
+}
+/*-----------------------screen resolution--------------------*/
+nav ul p a{
+    display: none;
+}
+nav p a{
+    display: none;
+}
+@media only screen and (max-width: 600px){
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav ul p a{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul li{
+        display: block;
+        font-size: 25px;
+    }
+    nav p a{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #1b1b1b7a;
+        position: fixed;
+        top: 0px;
+        right: -340px;
+        width: 340px;
+        height: 100vh;
+        padding-top: 50px;
+        padding-right: 50px; 
+        z-index: 2;
+    }
+    nav ul{
+        display: block;
+        margin: 10px;
+    }
+    nav ul p a{
+        position: absolute;
+        top: 10px;
+        left:15px;
+        cursor: pointer;
+    }
+    nav p a{
+        position: absolute;
+        top: 40px;
+        right: 25px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+    .propooject-column-1, .propooject-column-2{
+        flex-basis: 100%;
+    }
+    .propooject-column-1{
+        margin-bottom: 30px;
+    }
+    .propooject-column-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 40px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 200%;
+    }
+}
